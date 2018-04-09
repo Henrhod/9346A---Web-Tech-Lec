@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Preliminary Notes</title>
+	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="icon" href="Images/K.png">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div id="header_logo">
+				<img src="Images/K.png" width="150" height="150" alt="Logo">
+			</div>
+			<div id="header_title">
+				<div class="title">Web Systems and Technologies</div> <br>
+				<div class="subtitle">Lecture Notes</div>
+			</div>
+		</header>
+		<div class="navbar">
+  			<a href="Home.html">Home</a>
+  			<div class="dropdown">
+    			<button class="dropbtn">Preliminaries</button>
+    			<div class="dropdown-content">
+		      		<a href="Prelims.html#world_wide_web">World Wide Web</a>
+		      		<a href="Prelims.html#http">Hypertext Transfer Protocol</a>
+		      		<a href="Prelims.html#html">Hypertext Markup Language</a>
+    			</div>
+  			</div> 
+  			<div class="dropdown">
+    			<button class="dropbtn">Midterms</button>
+    			<div class="dropdown-content">
+		      		<a href="Midterms.html#1">CSS Selectors</a>
+		      		<a href="Midterms.html#2">CSS Declarations</a>
+		      		<a href="Midterms.html#3">JavaScript</a>
+    			</div>
+  			</div> 
+  			<div class="dropdown">
+    			<button class="dropbtn">Finals</button>
+    			<div class="dropdown-content">
+		      		<a href="#">Lesson 1</a>
+		      		<a href="#">Lesson 2</a>
+		      		<a href="#">Lesson 3</a>
+    			</div>
+  			</div> 
+		</div>
+		<div id="content">
+			<p> </p>
+			<p> </p>
+			<a id="world_wide_web"><div class="content1">World Wide Web</div></a>
+			<div class="content2">
+				<p>- Collection of web resources and applications that provide access to web resources through the Internet.</p>
+				<p>- Invented by Sir Timothy Berners-Lee around 1990.</p>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<a id="http"><div class="content1">Hypertext Transfer Protocol</div></a>
+			<div class="content2">
+				<p>- Application-level protocol with the lightness and speed necessary for distributed collaborative hypermedia information system.</p>
+				<p>- Jointly developed by W3C and IETF.</p>
+				<ul>
+					<li>HTTP 0.9 (1991)
+						<ul>
+							<li>Only has GET method.</li>
+							<li>Response is only HTML.</li>
+							<li>Disconnects after receiving response.</li>
+						</ul>
+					</li>
+					<br>
+					<li>HTTP 1.0 (RFC 1945 - 1996)
+						<ul>
+							<li>GET, HEAD, POST methods were added.</li>
+						</ul>
+					</li>
+					<br>
+					<li>HTTP 1.1 (RFC 2068 - January 1997; RFC 2616 - June 1999; RFC 7230-7235 - June 2014)
+						<ul>
+							<li>PUT, TRACE, OPTIONS, DELETE, CONNECT method.</li>
+							<li>HEADER is long and cannot be compressed.</li>
+						</ul>
+					</li>
+					<br>
+					<li>HTTP 2.0 (RFC 7540 - May 2015)
+						<ul>
+							<li>HEADER compression is provided.</li>
+							<li>Multiplexing concurrency.</li>
+							<li>Server push (server can anticipate in advance).</li>
+						</ul>
+					</li>
+				</ul>
+				<h1>HTTP Functionalities</h1>
+				<ul>
+					<li>Cache control.</li>
+					<li>MIME specifications.</li>
+					<li>Language and character specifications (ASCII).</li>
+					<li>Content/transfer coding.</li>
+					<li>Content negotiations (allows preferences among format types).</li>
+					<li>Client-server protocol negotiation (relies on protocol).</li>
+					<li>Persistent connections (provides reuse for connections unlike former single connections/requests).</li>
+					<li>Request pipelining/multiplexing.</li>
+					<li>Authentication/authorization (securing requests).</li>
+				</ul>
+				<h1>Uniform Resource Identifiers</h1>
+				<ul>
+					<li>- Begins with scheme (i.e. http, https).</li>
+					<li>- Authority.</li>
+					<li>- Path to source (document root on the server).</li>
+					<li>- Query (key).</li>
+					<li>- Fragment identifier (subsections within the page).</li>
+				</ul>
+				<h1>HTTP Request/Response</h1>
+				<table width="30%" border="1">
+					<tr>
+						<th>HTTP Request</th>
+						<th>HTTP Response</th>
+					</tr>
+					<tr>
+						<td>Request Line</td>
+						<td>Status Line</td>
+					</tr>
+					<tr>
+						<td>Headers</td>
+						<td>Headers</td>
+					</tr>
+					<tr>
+						<td>Empty line</td>
+						<td>Empty line</td>
+					</tr>
+				</table>
+				<h1>HTTP Request Message</h1>
+				<ul>
+					<li>GET - obtain target resource.</li>
+					<li>POST - process on origin metadata about the target resource without having data.</li>
+					<li>HEAD - used to obtain metadata about the target resource without having the body.</li>
+					<li>PUT - create/replace target resource.</li>
+					<li>DELETE - delete resource.</li>
+					<li>OPTIONS - to determine requirements/capabilities of serves to the target resource.</li>
+					<li>TRACE - loopback (echo/repeats request).</li>
+					<li>CONNECT - establish a tunnel to the server (end-to-end virtual connecting).</li>
+				</ul>
+				<h1>Method Properties</h1>
+				<ul>
+					<li><b>Safe</b> - read-only method, no changes in the server. 
+						<ul>
+							<li>GET</li>
+							<li>HEAD</li>
+							<li>OPTION</li>
+							<li>TRACE</li>
+						</ul>
+					</li>
+					<br>
+					<li><b>Idempotent</b> - no matter how many times the request is made, the expected behavior from the server is the same.
+						<ul>
+							<li>GET</li>
+							<li>HEAD</li>
+							<li>OPTION</li>
+							<li>TRACE</li>
+							<li>PUT</li>
+							<li>DELETE</li>
+						</ul>
+					</li>
+					<br>
+					<li><b>Cacheable</b> - the response for a method is allowed to be for future use.
+						<ul>
+							<li>GET</li>
+							<li>HEAD</li>
+							<li>POST</li>
+						</ul>
+					</li>
+				</ul>
+				<h1>HTTP Status Code</h1>
+				<ul>
+					<li>Informational (1XX)
+						<ul>
+							<li>100 Switching protocols</li>
+							<li>101 Continue</li>
+						</ul>
+					</li>
+					<br>
+					<li>Success (2XX)
+						<ul>
+							<li>200 OK</li>
+							<li>201 Created</li>
+							<li>202 Accepted</li>
+							<li>203 Non-authoritative</li>
+							<li>204 No content</li>
+							<li>205 Reset content</li>
+							<li>206 Partial content</li>
+						</ul>
+					</li>
+					<br>
+					<li>Redirection (3XX)
+						<ul>
+							<li>300 Multiple choices</li>
+							<li>301 Moved permanently</li>
+							<li>302 Found</li>
+							<li>303 See other</li>
+							<li>304 Not modified</li>
+						</ul>
+					</li>
+					<br>
+					<li>Client Error (4XX)
+						<ul>
+							<li>400 Bad request</li>
+							<li>401 Unauthorized</li>
+							<li>402 Payment required</li>
+							<li>403 Forbidden</li>
+							<li>404 Not found</li>
+							<li>405 Method not allowed</li>
+						</ul>
+					</li>
+					<br>
+					<li>Server Error (5XX)
+						<ul>
+							<li>500 Internal Server Error message is suitable</li>
+							<li>501 Not Implemented</li>
+							<li>502 Bad Gateway server</li>
+							<li>503 Service Unavailable a temporary state</li>
+							<li>504 Gateway Timeout</li>
+						</ul>
+					</li>
+				</ul>
+				<h1>HTTP Message Headers</h1>
+				<ul>
+					<li>General headers</li>
+					<li>Request headers</li>
+					<li>Entity headers</li>
+				</ul>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<a id="html"><div class="content1">Hypertext Markup Language</div></a>
+			<div class="content2">
+				<p>- Language used to markup documents (i.e. Web Pages).</p>
+				<p>- Application of Standard Generalized Markup Language (SGML) ISO 8897.</p>
+				<p>- To specify structure/content and presentation.</p>
+				<p>- Modern use of HTML solely for semantic specification of web page structure and content being delegated to style sheet.</p>
+				<p>- Initially developed at CERN the IETF then W3C then WHATWG.</p>
+				<ul>
+					<li>HTML 2.0 – 1995</li>
+					<li>HTML 3.2 W3C – 1197</li>
+					<li>HTML 4.0 W3C – December 1997</li>
+					<li>HTML 4.01 W3C – December 1999</li>
+				</ul>
+				<h2>Extensible Hypertext Markup Language</h2>
+				<ul>
+					<li>HTML in XML – Facilitate introduction of new HTML elements or attributes</li>
+					<li>XML – well-formed and valid</li>
+					<li>XHTML 1.0 – W3C recommendation 2000</li>
+					<li>XHTML 1.1 – module-based XHTML W3C 2001</li>
+				</ul>
+				<h2>HTML 5</h2>
+				<p>- Opera Started tabs(proprietary).</p>
+				<p>- Work undertaken by WHATWG (Apple, Mozilla and Opera) 2004.</p>
+				<p>- 1st draft published 2008 edited by Ian Hickson.</p>
+				<ul>
+					<li>HTML 5.1</li>
+					<li>HTML 5.2</li>
+					<li>DTD</li>
+					<li>WAI-ARIA</li>
+					<li>Math ML, SVG (Scalable Vector Graphics)</li>
+					<li>Character Reference</li>
+					<li>Comments</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
