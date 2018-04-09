@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>9346A Web Systems and Technologies Lecture</title>
+</head>
+
+<body>
+<section>
+	<h1>CSS Rule Precedence</h1>
+	<p>HTML element may be subject of selectors of multiple style rule.</p>
+	<ul>
+		<li>Whenrules target different properties: effects CASCADE (they combine)</li>
+		<li>When styles involve same properties they CONFLICT and must be resolved.</li>
+		<li>Resolution</li>
+		<ul>
+				<li>By ORIGIN and IMPORTANCE</li>
+					<ul>
+						<li>Origin - author / user-agent</li>
+						<li>Importance - priority</li>
+					</ul>
+				<li>By SPECIFICITY - that is calculated based on three sequence. Specificity only applies when the same element is targeted by multiple declarations. </li>
+					<ul>
+						<li>Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).</li>
+						<li>Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).</li>
+						<li>ID selectors (e.g., #example)</li>
+					</ul>
+		</ul>
+		
+	</ul>
+	<h2>When multiple declarations have equal specificity, the last declaration found in the CSS is applied to the element</h2>
+	 <iframe src="https://specificity.keegan.st/"> </iframe>
+</section>
+
+<section>
+	<h1>CSS DECLARATIONS</h1>
+	
+	<ul>
+	<p>Properties</p>
+		<li>Shorthand properties</li>
+			<ul>
+				<li>Allows authors to specify the value of several properties.</li>
+				<li>Single property (example: border, font, margin, border-left/ right)</li>
+					<ul>
+						<li>background-color:gray;</li>
+						<li>font-size:22px;</li>
+					</ul>
+			</ul>
+	<p>Vendor specific extension (Also known as vendor prefixes)</p>
+		<li>Used by browser vendors as prefix for names of experimental / non- standard CSS properties</li>
+			<ul>
+				<li>Eg. -webkit, -moz-,-o-,-ms-</li>
+				<li>Lately vendors are moving away from vendor prefixes in favor of user controlled flags</li>
+					<ul>
+						<li>Eg. -webkit-border-radius:20px;</li>
+					</ul>
+			</ul>
+			
+	<p>Custom properties (Also known as CSS variables)</p>
+		<li>Property names, prefix with -- representing a value that can be reused throughout a document.</li>
+			<ul>
+				<li>Example :   element { --main-bg-color: brown;}</li>
+				<li>element { background-color: var(--main-bg-color);}</li>
+			</ul>
+	</ul>
+</section>
+
+<section>
+	<h1>CSS Values</h1>
+	<ul>
+	<p>Value Processing</p>
+		<li>Declared, Cascaded, Specified (When you declare), Computed(Relative value), used and read on how values are being processed.</li>
+			
+	<p>Value Types</p>
+		<li>Keywords : Initial, Inherit, Unset</li>
+			<ul>
+				<li>h1{color:blue;}</li>
+				<li>div {color: red;}</li>
+				<li>h1{color: inherit;}</li>
+				<li>h1{color: unset;} - RESETS THE COLOR</li>	
+			</ul>
+		<li>Property specificity</li>
+		<li>Numbers</li>
+		<li>Dimension</li>
+			<ul>
+				<li>Length, angle, durations.</li>
+				<li>Length units</li>
+					<ul>
+						<li>font relative : em, ex, rem</li>
+						<li>Viewpoint percentage</li>
+						<li>Absolute, cm, mm</li>
+					</ul>
+				<li>Duration</li>
+					<ul>
+						<li>s,ms - used in animation / transitions</li>
+					</ul>
+				<li>Frequency units</li>
+					<ul>
+						<li>Hz/KHz (Initially introduced in CSS2 now obsolete)</li>
+					</ul>
+				<li>Resolution units</li>
+					<ul>
+						<li>Dppx,apr,dpcm</li>
+					</ul>
+				<li>Angle units</li>
+					<ul>
+						<li>Deg, rad, grad - used in some gradient and transform functions.</li>
+					</ul>
+				<li>Percentage </li>
+					<ul>
+						<li>Number with a ‘%’ suffix eg. 5%</li>
+						<li>Used to calculate a percentage of some value</li>
+					</ul>
+				
+				<li>URL/ URI</li>
+					<ul>
+						<li>url()function with absolute or relative. URL parameter</li>
+					</ul>
+				<li>Colors</li>
+					<ul>
+						<li>Color keywords: red</li>
+						<li>RGB hexadecimal notations : ff0000</li>
+						<li>RGB function (255,0,0) / rgb(100%, 0%,0%)</li>
+						<li>HSL functions(255,0,0) - hue Saturation and lightness</li>
+						<iframe src="http://www.colour-affects.co.uk/psychological-properties-of-colours"> </iframe>
+						
+					</ul>
+				<li>Strings </li>
+					<ul>
+						<li>Delimited by (‘) or (“) </li>
+					</ul>
+				<li>Functions</li>
+				<li>Miscellaneous types</li>
+				
+			</ul>
+	</ul>
+</section>
+
+
+
+</body>
+</html>
