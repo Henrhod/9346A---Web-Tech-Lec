@@ -7,6 +7,91 @@
 </head>
 
 <body>
+
+
+<div>
+	<section>
+		<h1>Selector – target you want to format</h1>
+		<ul>
+			<li>Whatever you indicate is a subject</li>
+			<li>Chain or 1 more sequence of simple selector separated by combinators</li>
+			<li>lways start with a type selector or universal selector</li>         
+		</ul>
+		<p>*  means everything</p>
+		<p>div > * - anything that is a child of div</p>
+		<p>*.__ - everything with that(value)</p>
+		<h1>Type selector – p, h1, etc.</h1>
+
+	</section>
+</div>
+
+<div>
+	<section> 
+		<h1>ID selector -> #</h1>
+		<p>Nav # main</p>
+	</section>
+</div> 
+
+<div>
+	<section>
+		<h1>Class Selector</h1>
+		<ul>
+			<li>ui.top-ten</li>
+			<li>.normal</li>
+			<li>“ ~= ” matches the word, </li>
+			<li>“ /= ” anything begins with … /- , </li>
+			<li>“ ^= ” anything start with https,</li>
+			<li>“$=”- don’t know,</li>
+			<li>  “ *=” anything who’s value ….</li>
+		</ul>
+	</section>
+</div>
+
+<div>
+	<section>
+<h1>Attribute Selector – particular/ specific/ direct match</h1>
+Img[alt]
+Nav[id = main]
+	</section>
+</div>
+
+<div>
+	<section>
+		<h1>Combinators used to impose additional matching constrains</h1>
+		<ul>
+			<li>Descendants / not necessarily a direct descendant</li>
+			<li>Child combinator(>)</li>
+			<li>Sibling combinator</li>
+				<ul>
+					<li>Adjacent(+)</li>
+					<li>General (~)</li>
+				</ul>
+			<li>Selector group - “ , ” union of all elements</li>
+	</ul>
+	</section>
+</div>
+
+<div>
+	<section>
+		<h1>Pseudo elements/classes</h1>
+			<ul>
+				<li>Dynamic pseudo class</li>
+					<ul>
+						<li>Link pseudo class - :link, :visited</li>
+						<li>User action pseudo class - :hover, :active, :focus</li>
+					</ul>
+				<li>Target pseudo class - :target</li>
+				<li>Language pseudo class - :lang()</li>
+				<li>UI element State Pseudo class - : enable, :disable. :checked, :indeterminate</li>
+				<li>Structural pseudo class - :root, :first-child, :last-child, :only-child, :nth-child(), :nth-last-child(), :first-of-type, :last-of-type, :only-of-type, :nth-of-type(), :last-of-type(), :empty</li>
+				<li>Pseudo element - : first-letter, :first-line, :before, :after</li>
+				<p>Content: ‘chapter’ counter</p>
+				<p>Counter – increment: chapter 1</p>
+				<p>Counter – reset : topic 0</p>
+			</ul>
+		</section>
+</div>
+
 <section>
 	<h1>CSS Rule Precedence</h1>
 	<p>HTML element may be subject of selectors of multiple style rule.</p>
@@ -137,6 +222,132 @@
 	</ul>
 </section>
 
+<div>
+			<section>
+				<h1> CSS Preprecessors or Framework and polyfills</h1>
+				<ul>
+					<li>Css Preprecessors
+						<ul>
+							<li>Generate css using custom language syntax that includes feature not included in css
+								<ul>
+									<li>SASS - allows you to use nested css or cfan apply css withour using brackets</li>
+									<li>SCSS - see https://sass-lang.com/</li>
+								</ul>
+							</li>
+							<li> Mixins: information you can reuse 
+								<ul>
+									<li> eg. mixin abc{
+											font: italic sans-serif;
+											border: 2px dashed;
+										}
+									</li>
+									<li> call the mixin in s css </li>
+									<li> @include abc(1px, gray)</li>
+								</ul>
+							</li>
+						</ul>						
+					</li>
+					<li>CSS Frameworks</li>
+						<ul>
+							<li>provides predefine CSS designs function that can be reused or extend eg. bootstrap, foundation
+							</li>
+						</ul>
+				</ul>
+				<li>JavaScript Execution Environment
+					<ul>
+						<li>Core JavaScript(EcmaScript) language and API</li>
+						<li>(Traditional) Browser Object Model(BOM) API(non-standardize)
+							<ul>
+								<li>Window, Navigator, Screen, Location and History</li>
+							</ul>
+						</li>
+						<li>Document Object Model(DOM) API
+							<ul>
+								<li> Node, Document, Element, Text, Attrib, DocumentType, Comment</li>
+								<li>Event, EventTarget, EventListener</li>
+								<li>CSSStyleSheet, CSSRules</li>
+							</ul>
+						</li>
+						<li>Miscellaneous JavaScript Web APIs
+							<ul>
+								<li>Geolocation, IndexedDB, Local Storage, Push Notifications, Service Workers, Web Sockets, Web Workers, XMLHttpRequest(AJAX)</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</section>
+		</div>
+
+		
+<div>
+<section>
+	<h1>Document Object Model</h1>
+	<p>API that allows access to the HTML document from within scripts associated with the web page.</p>
+	<p>A parsed HTML document is represented by a DOM tree, Which contains nodes representing elements, element attributes, textual content, and other HTML document components(e.g., DOCTYPE, comments, etc.)</p>
+	<p>Accessed via the document object property of the global Window object.</p>
+	<p>Functionalities:</p>
+	<ul>
+		<li>Retrieve references to nodes(or node collections) in the DOM
+			<ul>
+				<li>getElementById()</li>
+				<li>getElementByTagName(), getElementByClassName(), getElementByName()</li>
+				<li>querySelector(), querySelectorAll()</li>
+			</ul>
+		</li>
+		
+		<li>Traverse the DOM tree(from a given node)
+			<ul>
+				<li>parentNode, parentElement</li>
+				<li>childNode, children</li>
+				<li>firstChild, lastChild, nextSibling, previousSibling</li>
+				<li>firstElementChild, lastElementChild, nextElementSibling, previousElementSibling</li>
+			</ul>
+		</li>
+		
+		<li>Constructor/Copy Nodes
+			<ul>
+				<li>createElement(), createTextNode(), createAttribute()</li>
+				<li>cloneNode(), importNode()</li>
+			</ul>
+		</li>
+		
+		<li>Manipulate the DOM tree
+			<ul>
+				<li>appendChild(), insertBefore(), replaceChild(), removeChild()</li>
+				<li>adoptNode()</li>
+			</ul>
+		</li>
+		
+		<li>Miscellaneous attributes and methods
+			<ul>
+				<li>nodeType, nodeName, NodeValue</li>
+				<li>Attributes, id, tagName, className, classList</li>
+				<li>ownerDocument, documentElement, hasChildNodes()</li>
+				<li>normalize()</li>
+			</ul>
+		</li>
+		
+		<li>Manipulate attributes (for element nodes)
+			<ul>
+				<li>setAttribute(), getAttribute(), removeAttribute()</li>
+				<li>setAttributeNode(), getAttributeNode(), removeAttributeNode()</li>
+			</ul>	
+		</li>
+		
+		<li>Event handling
+			<ul>
+				<li>addEventListener(), removeEventListener(). dispatchEvent()</li>
+			</ul>
+		</li>
+		
+		<li>Style Handling
+			<ul>
+				<li>styleSheets, ownerRule, cssRules, insertRule(), deleteRule(), getComputedStyle()</li>
+			</ul>
+		</li>
+	</ul>
+</section>
+</div>
 
 
 </body>
