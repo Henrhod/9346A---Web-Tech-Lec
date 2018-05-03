@@ -1,7 +1,9 @@
 #puzzle {
 	width: 50%;
+	/* background-color: pink; */
 	<!-- text-align: center; -->
 }
+
 .squares {
 	border: 1px solid black;
 	background-color: white;
@@ -22,3 +24,30 @@
 	height: 20px;
 	cursor: contextmenu;
 }
+
+#across {
+	padding: 2px;
+}
+
+#across ul {
+	font-weight: bold;
+}
+
+#across ul li {
+	list-style-type: none;
+	font-weight: normal;
+}
+
+#down {
+	padding: 2px;
+}
+
+#down ul {
+	font-weight: bold;
+}
+
+#down ul li {
+	list-style-type: none;
+	font-weight: normal;
+}
+
