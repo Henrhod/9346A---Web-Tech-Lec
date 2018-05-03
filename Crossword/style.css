@@ -6,23 +6,27 @@
 
 .squares {
 	border: 1px solid black;
+	border-radius: 2px;
 	background-color: white;
 	color: black;
 	text-align: center;
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	cursor: contextmenu;
+	text-transform: uppercase;
+	font-weight: bold;
+	/* font-family: Century Gothic; */
+	font-size: 13px;
 }
+
 .squares_blank { 
 	border: 1px solid white;
 	background-color: white	;
 	color: black;
-	text-align: center;
 	display: inline-block;
-	width: 20px;
-	height: 20px;
-	cursor: contextmenu;
+	width: 40px;
+	height: 40px;
 }
 
 #across {
