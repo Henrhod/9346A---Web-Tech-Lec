@@ -10,7 +10,7 @@
 	<div id="wrapper">
 		<header id="header">
 			<div id="header_logo">
-				<img src="Images/K.png" width="150" height="150" alt="Logo">
+				<img src="Images/K.png" width="12%" height="12%" alt="Logo">
 			</div>
 			<div id="header_title">
 				<div class="title">Web Systems and Technologies</div> <br>
@@ -38,18 +38,25 @@
   			<div class="dropdown">
     			<button class="dropbtn">Finals</button>
     			<div class="dropdown-content">
-		      		<a href="#">Lesson 1</a>
-		      		<a href="#">Lesson 2</a>
-		      		<a href="#">Lesson 3</a>
+		      		<a href="Finals.html#1">Java Servlets</a>
+		      		<a href="Finals.html#2">JavaServer Pages (JSP)</a>
+		      		<a href="Finals.html#3">PHP</a>
     			</div>
   			</div> 
+  			<div class="dropdown">
+    			<button class="dropbtn">Quizzes</button>
+    			<div class="dropdown-content">
+		      		<a href="Crossword.html">Crossword Puzzles</a>
+    			</div>
+  			</div>
 		</div>
 		<div id="content">
 			<p> </p>
 			<p> </p>
 			<a id="1"><div class="content1">CSS Selectors</div></a>
 			<div class="content2">
-				<h1>Selector – target you want to format.</h1>
+				<h1>Selector</h1>
+				<p>- Target you want to format.</p>
 				<ul>
 					<li>Whatever you indicate is a subject.</li>
 					<li>Chain or 1 more sequence of simple selector separated by combinators.</li>
@@ -58,9 +65,11 @@
 				<p>*  means everything.</p>
 				<p>div > * - anything that is a child of div.</p>
 				<p>*.__ - everything with that(value).</p>
-				<h1>Type selector – p, h1, etc.</h1>
-				<h1>ID selector -> #</h1>
-				<p>Nav # main</p>
+				<h1>Type selector</h1>
+				<p>- p, h1, etc.</p>
+				<h1>ID selector</h1>
+				<p>- #</p>
+				<p>- Nav # main</p>
 				<h1>Class Selector</h1>
 				<ul>
 					<li>ui.top-ten</li>
@@ -71,10 +80,12 @@
 					<li>“$=”- don’t know</li>
 					<li>  “ *=” anything who’s value …</li>
 				</ul>
-				<h1>Attribute Selector – particular / specific / direct match</h1>
+				<h1>Attribute Selector</h1>
+				<p>- particular / specific / direct match</p>
 				<p>Img[alt]</p>
 				<p>Nav[id = main]</p>
-				<h1>Combinators used to impose additional matching constrains</h1>
+				<h1>Combinators</h1>
+				<p>- Used to impose additional matching constraints</p>
 				<ul>
 					<li>Descendants / not necessarily a direct descendant</li>
 					<li>Child combinator(>)</li>
@@ -104,7 +115,7 @@
 				<h1>CSS Rule Precedence</h1>
 				<p>HTML element may be subject of selectors of multiple style rule.</p>
 				<ul>
-					<li>Whenrules target different properties: effects CASCADE (they combine)</li>
+					<li>When rules target different properties: effects CASCADE (they combine)</li>
 					<li>When styles involve same properties they CONFLICT and must be resolved.</li>
 					<li>Resolution</li>
 					<ul>
@@ -121,7 +132,7 @@
 							</ul>
 					</ul>
 				</ul>
-				<h2>When multiple declarations have equal specificity, the last declaration found in the CSS is applied to the element</h2>
+				<p>When multiple declarations have equal specificity, the last declaration found in the CSS is applied to the element</p>
 	 			<!--<iframe src="https://specificity.keegan.st/"> </iframe>-->
 	 		</div>	
 	 		<br>
@@ -130,8 +141,9 @@
 			<a id="2"><div class="content1">CSS Declarations</div></a>
 			<div class="content2">
 				<ul>
-				<p>Properties</p>
-					<li>Shorthand properties</li>
+				<li>Properties</li>
+					<ul>
+						<li>Shorthand properties</li>
 						<ul>
 							<li>Allows authors to specify the value of several properties.</li>
 							<li>Single property (example: border, font, margin, border-left/ right)</li>
@@ -140,37 +152,45 @@
 									<li>font-size:22px;</li>
 								</ul>
 						</ul>
-				<p>Vendor specific extension (Also known as vendor prefixes)</p>
-					<li>Used by browser vendors as prefix for names of experimental / non- standard CSS properties</li>
+					</ul>
+				<li>Vendor specific extension (Also known as vendor prefixes)</li>
+					<ul>
+						<li>Used by browser vendors as prefix for names of experimental / non- standard CSS properties</li>
 						<ul>
 							<li>Eg. -webkit, -moz-,-o-,-ms-</li>
 							<li>Lately vendors are moving away from vendor prefixes in favor of user controlled flags</li>
 								<ul>
 									<li>Eg. -webkit-border-radius:20px;</li>
 								</ul>
-						</ul>		
-				<p>Custom properties (Also known as CSS variables)</p>
-					<li>Property names, prefix with -- representing a value that can be reused throughout a document.</li>
+						</ul>	
+					</ul>	
+				<li>Custom properties (Also known as CSS variables)</li>
+					<ul>
+						<li>Property names, prefix with -- representing a value that can be reused throughout a document.</li>
 						<ul>
 							<li>Example :   element { --main-bg-color: brown;}</li>
 							<li>element { background-color: var(--main-bg-color);}</li>
 						</ul>
+					</ul>
 				</ul>
 				<h1>CSS Values</h1>
 				<ul>
-				<p>Value Processing</p>
-					<li>Declared, Cascaded, Specified (When you declare), Computed(Relative value), used and read on how values are being processed.</li>		
-				<p>Value Types</p>
-					<li>Keywords : Initial, Inherit, Unset</li>
+				<li>Value Processing</li>
+					<ul>
+						<li>Declared, Cascaded, Specified (When you declare), Computed(Relative value), used and read on how values are being processed.</li>	
+					</ul>	
+				<li>Value Types</li>
+					<ul>
+						<li>Keywords : Initial, Inherit, Unset</li>
 						<ul>
 							<li>h1{color:blue;}</li>
 							<li>div {color: red;}</li>
 							<li>h1{color: inherit;}</li>
 							<li>h1{color: unset;} - RESETS THE COLOR</li>	
 						</ul>
-					<li>Property specificity</li>
-					<li>Numbers</li>
-					<li>Dimension</li>
+						<li>Property specificity</li>
+						<li>Numbers</li>
+						<li>Dimension</li>
 						<ul>
 							<li>Length, angle, durations.</li>
 							<li>Length units</li>
@@ -220,8 +240,9 @@
 							<li>Miscellaneous types</li>
 							
 						</ul>
+					</ul>
 				</ul>
-				<h1>CSS Preprecessors or Framework and polyfills</h1>
+				<h1>CSS Preprecessors/Framework and polyfills</h1>
 				<ul>
 					<li>CSS Preprecessors
 						<ul>
