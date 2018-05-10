@@ -19,13 +19,13 @@
     to   { opacity: 1; }
 }
 h1{
-	margin-left:20px;
+	margin-left:1%;
 }
 h2{
-	margin-left:20px;
+	margin-left:1%;
 }
 table{
-	margin-left:20px;
+	margin-left:1%;
 }
 body{
 	animation:fadein 2s;
@@ -35,7 +35,7 @@ body{
 	background-attachment:fixed;
 }
 p{
-	margin-left:20px;
+	margin-left:1%;
 	text-align:justify
 }
 footer{
@@ -46,27 +46,30 @@ footer{
 	text-align:center;
 }
 #wrapper{
-    width:1350px;
+    width:100%;
 	margin:auto;
 	border-radius:8px;
 }
 #header{
 	border-radius: 8px 8px 0px 0px;
-	width:1350px;
-	height:250px;
+	width:100%;
+	height:100%;
 	background-color:#594F4F;
 }
 #header_logo{
 	padding-left:2%;
 	padding-top:4%;
+	padding-right:2%;
+	padding-bottom:4%;
 }
 #header_title{
-	margin-left:200px;
-	margin-top:-150px;
+	margin-top:-15%;
+	margin-left:16%;
+	padding-bottom:4%;
 }
 #content{
 	background-color:transparent;
-	padding:10px;
+	padding:1%;
 	color:white;
 }
 #image{
@@ -121,24 +124,27 @@ footer{
 .title{
 	font-family:"Rockwell";
 	color:white;
-	font-size:75px;
+	font-size:5vw;
 }
 .subtitle{
 	font-family:"Rockwell";
     color:white;
-	font-size:45px;
-	margin-left:30px;
-	margin-top:-25px;
+	font-size:3.5vw;
+	margin-left:3%;
+	margin-top:-1.5%;
 }
 .content1{
 	font-family:"RockwellB";
-	font-size:60px;
-	margin-left:20px;
+	font-size:3.5vw;
+	margin-left:1%;
+	margin-right:1%;
 	color:#202020;
 }
 .content2{
 	font-family:"RockwellB";
-	font-size:20px;
+	font-size:1.5vw;
+	margin-left:1%;
+	margin-right:1%;
 	color:#202020;
 }
 .navbar{
@@ -150,7 +156,7 @@ footer{
 .navbar a{
     float:left;
     font-family:"RockwellB";
-	font-size:20px;
+	font-size:1.5vw;
     display:block;
     color:white;
     text-align:center;
@@ -163,7 +169,7 @@ footer{
     overflow:hidden;
 }
 .dropdown .dropbtn{
-    font-size:20px;    
+    font-size:1.5vw;    
     border:none;
     outline:none;
     color:white;
@@ -180,13 +186,13 @@ footer{
     display:none;
     position:absolute;
     background-color:#f9f9f9;
-    min-width:160px;
+    min-width:25%;
     box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index:1;
 }
 .dropdown-content a{
     float:none;
-    font-size:16px;
+    font-size:1.2vw;
     color:#202020;
     padding:12px 16px;
     text-decoration:none;
@@ -206,4 +212,52 @@ footer{
 @font-face{
 	font-family:"RockwellB";
 	src:url("../Fonts/rockB.ttf");
+}
+
+#puzzle {
+	background-color: transparent;
+	text-align: center;
+}
+.squares {
+	border: 1px solid black;
+	border-radius: 2px;
+	background-color: transparent;
+	color: black;
+	text-align: center;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	cursor: contextmenu;
+	text-transform: uppercase;
+	font-weight: bold;
+	/* font-family: Century Gothic; */
+	font-size: 13px;
+}
+.squares_blank { 
+	border: 1px solid transparent;
+	background-color: transparent;
+	color: black;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+#across {
+	padding: 2px;
+}
+#across ul {
+	font-weight: bold;
+}
+#across ul li {
+	list-style-type: none;
+	font-weight: normal;
+}
+#down {
+	padding: 2px;
+}
+#down ul {
+	font-weight: bold;
+}
+#down ul li {
+	list-style-type: none;
+	font-weight: normal;
 }
