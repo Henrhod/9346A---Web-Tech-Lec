@@ -1,0 +1,10 @@
+PHP originally stoods for "____ Home Page"? Personal
+A ____ is a java class that runs in a Java-enabled server? Servlet
+what do you need to run PHP in a command line environtment? PHP parser
+Is a Server-side programming framework, built on Chrome's JavaScript engine? Node.js
+Node.js is a _____ event driven JavaScript runtime? asynchronous
+JSPs Stands for Java ____ Pages? Server
+What is the top 1 most critical web application security risk by OWASP? Injection
+PHP stands for "PHP: Hypertext ___"? Preprocessors
+In OWASP A4:2017-XML External Entities(), what is inside the parentheses? XXE 
+What is the top 8 most critical web application security risk by OWASP, Insecure _____? Deserialization  
