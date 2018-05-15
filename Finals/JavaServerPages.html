@@ -28,15 +28,16 @@
 			<p> </p>
 			<p> </p>
 			<a id="1"><div class="content1">Java Server Pages</div></a>
+			<br>
 			<div class="content2">
-				
-				<h2>Introduction</h2>
+				<button class="accordion">Introduction</button>
+				<div class="panel">
 				<p>Java Server Pages (JSPs) are a Sun Microsystems specification for combining Java with HTML to provide dynamic content for Web pages. 
 					When you create dynamic content, JSPs are more convenient to write than HTTP servlets because they allow you to embed Java 
 					code directly into your HTML pages, in contrast with HTTP servlets, in which you embed HTML inside Java code.</p>
-					<br><hr>
-					
-				<h2>What You Can Do with JSPs</h2>
+				</div>
+				<button class="accordion">What You Can Do with JSPs</button>
+				<div class="panel">
 				<ul>
 					<li>Combine Java with HTML to provide dynamic content for Web pages.
 						<ul>Static content comprising of regular HTML.</ul>
@@ -46,8 +47,9 @@
 					<li>Embed Java code directly into your HTML pages, in contrast with HTTP servlets, in which you embed HTML inside Java code.</li>
 					<li>Separate the dynamic content of a Web page from its presentation.</li>
 				</ul>
-				<br><hr>
-				<h2>Overview of How JSP Requests Are Handled</h2>
+				</div>
+				<button class="accordion">Overview of How JSP Requests Are Handled</button>
+				<div class="panel">
 				<p>WebLogic Server handles JSP requests in the following sequence:</p>
 				<ol>
 					<li>A browser requests a page with a .jsp file extension from WebLogic Server</li>
@@ -57,12 +59,15 @@
 					<li>The generated JspPage servlet class is invoked to handle the browser request.</li> <br>
 					<img src="Images/jsp.jpg" width="800" height="350">
 				</ol>
-				<br><hr>
-				<h2>Our Learnings of Java Server Pages</h2>
+				</div>
+				<button class="accordion">Our Learnings of Java Server Pages</button>
+				<div class="panel">
 					<p> JavaServer pages is also a web service technology that functions to liten for  request and send out response with the Html. It allows web developers to esily design, implement and maintain dynamic web pages (combining static HTML with Java Code)
 						being applied in the system. JavaServer Pages are also Html web pages, but the main difference is that JSP contains executable code application logic that is used to generate its dynamic content</p>
+				</div>
 	 		</div>					
 	 	</div>				
 	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
