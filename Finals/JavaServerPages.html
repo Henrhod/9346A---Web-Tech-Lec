@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaServer Pages</title>
+	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="icon" href="Images/K.png">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div id="header_logo">
+				<img src="Images/K.png" width="150" height="150" alt="Logo">
+			</div>
+			<div id="header_title">
+				<div class="title">Web Systems and Technologies</div> <br>
+				<div class="subtitle">Finals Topics</div>
+			</div>
+		</header>
+		<div class="navbar">
+  			<a href="Servlets.html">Java Servlets</a>
+  			<a href="JavaServerPages.html">Java Server Pages</a>
+  			<a href="PHP.html">PHP</a>
+  			<a href="Node.html">Node JS</a>
+  			<a href="OWASP.html">OWASP</a>
+		</div> 
+		<div id="content">
+			<p> </p>
+			<p> </p>
+			<a id="1"><div class="content1">Java Server Pages</div></a>
+			<div class="content2">
+				
+				<h2>Introduction</h2>
+				<p>Java Server Pages (JSPs) are a Sun Microsystems specification for combining Java with HTML to provide dynamic content for Web pages. 
+					When you create dynamic content, JSPs are more convenient to write than HTTP servlets because they allow you to embed Java 
+					code directly into your HTML pages, in contrast with HTTP servlets, in which you embed HTML inside Java code.</p>
+					<br><hr>
+					
+				<h2>What You Can Do with JSPs</h2>
+				<ul>
+					<li>Combine Java with HTML to provide dynamic content for Web pages.
+						<ul>Static content comprising of regular HTML.</ul>
+						<ul>Dynamic content comprising of Java code.</ul>
+					</li>
+					<li>Call custom Java classes, called taglibs, using HTML-like tags.</li>
+					<li>Embed Java code directly into your HTML pages, in contrast with HTTP servlets, in which you embed HTML inside Java code.</li>
+					<li>Separate the dynamic content of a Web page from its presentation.</li>
+				</ul>
+				<br><hr>
+				<h2>Overview of How JSP Requests Are Handled</h2>
+				<p>WebLogic Server handles JSP requests in the following sequence:</p>
+				<ol>
+					<li>A browser requests a page with a .jsp file extension from WebLogic Server</li>
+					<li>WebLogic Server reads the request.</li>
+					<li>Using the JSP compiler, WebLogic Server converts the JSP into a servlet class that implements the javax.servlet.jsp.JspPage interface. The JSP file is compiled only when the page is first requested, or when the JSP file has been changed. 
+						Otherwise, the previously compiled JSP servlet class is re-used, making subsequent responses much quicker.</li>
+					<li>The generated JspPage servlet class is invoked to handle the browser request.</li> <br>
+					<img src="Images/jsp.jpg" width="800" height="350">
+				</ol>
+				<br><hr>
+				<h2>Our Learnings of Java Server Pages</h2>
+					<p> JavaServer pages is also a web service technology that functions to liten for  request and send out response with the Html. It allows web developers to esily design, implement and maintain dynamic web pages (combining static HTML with Java Code)
+						being applied in the system. JavaServer Pages are also Html web pages, but the main difference is that JSP contains executable code application logic that is used to generate its dynamic content</p>
+	 		</div>					
+	 	</div>				
+	</div>
+</body>
+</html>
