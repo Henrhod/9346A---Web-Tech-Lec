@@ -49,6 +49,7 @@ footer{
     width:100%;
 	margin:auto;
 	border-radius:8px;
+	background-color:#e8e8e8;
 }
 #header{
 	border-radius: 8px 8px 0px 0px;
@@ -212,6 +213,34 @@ footer{
 @font-face{
 	font-family:"RockwellB";
 	src:url("../Fonts/rockB.ttf");
+}
+
+.accordion {
+	font-family: "RockwellB";
+	font-size: 2vw;
+    background-color: #202020;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 8px 8px 8px 8px;
+    outline: none;
+    transition: 0.4s;
+}
+.accordion:hover {
+    background-color:#36434d;
+}
+.active{
+    background-color:#36434d;
+    border-radius: 8px 8px 0px 0px;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-radius: 0px 0px 8px 8px;
 }
 
 #puzzle {
