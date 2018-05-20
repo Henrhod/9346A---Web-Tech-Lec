@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PHP </title>
+	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="icon" href="Images/K.png">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div id="header_logo">
+				<img src="Images/K.png" width="150" height="150" alt="Logo">
+			</div>
+			<div id="header_title">
+				<div class="title">Web Systems and Technologies</div> <br>
+				<div class="subtitle">Finals Topics</div>
+			</div>
+		</header>
+		<div class="navbar">
+  			<a href="index.html">Java Servlets</a>
+  			<a href="JavaServerPages.html">Java Server Pages</a>
+  			<a href="PHP.html">PHP</a>
+  			<a href="Node.html">Node JS</a>
+  			<a href="OWASP.html">OWASP</a>
+  			<a href="References.html">Read More</a>
+  			<div class="dropdown">
+    			<button class="dropbtn">Quizzes</button>
+    			<div class="dropdown-content">
+		      		<a href="Crossword.html">Crossword Puzzle</a>
+		      		<a href="quiz.php">Multiple Choice</a>
+    			</div>
+  			</div>
+  			<div class="search"> 
+	  			<form>
+	  				<label for="search">Search: </label>
+					<input class="Searchinput" type="text" onkeyup="showResult(this.value)" placeholder="Topic">
+					<div id="livesearch"></div>
+				</form>
+			</div>
+		</div> 
+			<div id="content">
+			<p> </p>
+			<p> </p>
+			<a id="1"><div class="content1">PHP</div></a>
+			<br>
+			<div class="content2">
+				<button class="accordion">Introduction</button>
+				<div class="panel">
+				<p>PHP is an acronym for "PHP: Hypertext Preprocessor". PHP files can contain text, HTML, CSS, JavaScript, and PHP code
+					PHP code are executed on the server, and the result is returned to the browser as plain HTML and uses the extension ".php"</p>
+				</div>
+				<button class="accordion">What Can PHP Do?</button>
+				<div class="panel">
+				<ul>
+					<li>Server-side scripting. This is the most traditional and main target field for PHP. You need three things to make this work: 
+						the PHP parser (CGI or server module), a web server and a web browser.</li>
+					<li>Command line scripting. You can make a PHP script to run it without any server or browser. You only need the PHP parser to use it this way.  </li>
+					<li>PHP can create, open, read, write, delete, and close files on the server</li>
+					<li>PHP can collect form data and send and receive cookies </li>
+					<br>
+					<img src="Images/php.png" width="600" height="300">
+				</ul>
+				</div>
+				<button class="accordion">Servlet Development</button>
+				<div class="panel">
+				<p>Key points to Servlet development</p>
+				<ul>
+					<li>Programmers of HTTP servlets utilize a standard Java API, javax.servlet.http, to create interactive applications.</li>
+					<li>HTTP servlets can read HTTP headers and write HTML coding to deliver a response to a browser client. </li>
+					<li>Servlets are deployed to WebLogic Server as part of a Web application. A Web application is a grouping of application components such 
+						as servlet classes, JavaServer Pages (JSPs), static HTML pages, images, and security.</li>
+				</ul>
+				</div>
+				<button class="accordion">How We Applied Hypertext Preprocessors</button>
+				<div class="panel">
+					<p> PHP is a server side scripting technology language that is often used by developers to add functionality to the web sites that html can not go for.
+					It can be used to collect user information that can lead to processing information in different ways, It can be used in the database and how it is accessed, in retrieving, and adding data.
+					Other uses include accessing cookies as well as setting  cookies. Set user restrictions and apply data encryptions.</p>
+	 			</div>
+	 		</div>
+	 	</div>				
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
