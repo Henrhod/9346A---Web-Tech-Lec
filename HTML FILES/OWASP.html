@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OWASP</title>
+	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="icon" href="Images/K.png">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div id="header_logo">
+				<img src="Images/K.png" width="150" height="150" alt="Logo">
+			</div>
+			<div id="header_title">
+				<div class="title">Web Systems and Technologies</div> <br>
+				<div class="subtitle">Finals Topics</div>
+			</div>
+		</header>
+		<div class="navbar">
+  			<a href="index.html">Java Servlets</a>
+  			<a href="JavaServerPages.html">Java Server Pages</a>
+  			<a href="PHP.html">PHP</a>
+  			<a href="Node.html">Node JS</a>
+  			<a href="OWASP.html">OWASP</a>
+  			<a href="References.html">Read More</a>
+  			<div class="dropdown">
+    			<button class="dropbtn">Quizzes</button>
+    			<div class="dropdown-content">
+		      		<a href="Crossword.html">Crossword Puzzle</a>
+		      		<a href="quiz.php">Multiple Choice</a>
+    			</div>
+  			</div>
+  			<div class="search"> 
+	  			<form>
+	  				<label for="search">Search: </label>
+					<input class="Searchinput" type="text" onkeyup="showResult(this.value)" placeholder="Topic">
+					<div id="livesearch"></div>
+				</form>
+			</div>
+		</div> 
+		<div id="content">
+			<p> </p>
+			<p> </p>
+			<a id="1"><div class="content1">OWASP</div></a>
+			<div class="content2">
+			<h2>OWASP TOP 10 2017</h2>
+			<ul>
+				<button class="accordion"><li>A1:2017-Injection</li></button>
+				<div class="panel">
+				<p>
+				Injection is a method that exploits risks or vulnerabilities where the attack is sent using command based execution. It may come from an unknown source that is not reliable or from the client himself through accessing some applications. Injection means that the malicious data is being installed to the client’s device. This is possible  by executing command-based  applications like SQL queries and OS commands or Command Line.
+				</p>
+				</div>
+				<button class="accordion"><li>A2:2017-Broken Authentication</li></button>
+				<div class="panel">
+				<p>
+				Broken authentication is a risk or vulnerability where a website or an application that has an authentication has a weak authentication mechanism or faulty sessions. Threat agents can bypass the authentication or duplicate session ID or if they can guess the username and password of an administrator. Having a broken authentication in some of the major websites like banking websites where you store your own credentials and money can lead to a bigger problems. For attackers, websites with a weaker and vulnerable authentication is a easy prey for them. And confidential data that is stored or access by the website can easily get.
+				</p>
+				</div>
+				<button class="accordion"><li>A3:2017 Sensitive Data Exposure</li></button>
+				<div class="panel">
+				<p>
+				Sensitive data exposure is a  vulnerability that occurs whenever  a web application does not properly protect sensitive information from being revealed to illegitimate users. In web applications created today, almost all contains sensitive data that requires stronger security, some examples are passwords, credit card information and personal information that pertains to a person and their property.  When sensitive data exposure happens, attackers can easily exploit data such as passwords, bank account numbers to conduct cyber crimes.
+				<br>
+				Sensitive data exposure is uncommonly used for it is difficult to do as well as hard to detect, though giving off a significantly severe effect if executed by the attacker properly. An attacker works by detecting if a network accessed by a user through http has no encryption or security. The attacker can get into the network and perform a sniffing activity into the networks traffic, this attacker approach is also called as MITM - Man in the middle attack, through this, easily the attacker can access any data being sent through the network including the user’s credentials and any personal information available in the network.
+				</p>
+				</div>
+				<button class="accordion"><li>A4:2017-XML External Entities (XXE)</li></button>
+				<div class="panel">
+				<p>
+					An XML External Entity attack is a type of attack against an application that parses XML input. This attack occurs when XML input containing a reference to an external entity is processed by a weakly configured XML parser. This attack may lead to the disclosure of confidential data, denial of service, server side request forgery, port scanning from the perspective of the machine where the parser is located, and other system impacts.
+				</p>
+				</div>
+				<button class="accordion"><li>A5:2017-Broken Access Control</li></button>
+				<div class="panel">
+				<p>
+					"Broken Access means that unauthorize access to system functionality and sources has created exploitable weakness that opens your company to harmful and potential expensive outcomes." with that being said, having a broken authentication is bad but having a broken access control is worst, because if having a broken authentication they can log-in to your application and can get your data. But having a broken access control, from the word itself they will have access or control to your application and its a much worse scenario example of it if a banking system have a broken access control, attackers are not limited to viewing and getting information, now they can also access accounts and transfer funds to other accounts.
+				</p>
+				</div>
+				<button class="accordion"><li>A6:2017-Security Misconfiguration</li></button>
+				<div class="panel">
+				<p>
+				This occurs when the Security setting was set or implemented as defaults. Attackers can easily exploit the websites in this case. It can occur in any level of application stack. Application which are Automated scanners are very effective, It helps to check issues regarding security Misconfiguration.
+				</p>
+				</div>
+				<button class="accordion"><li>A7:2017-Cross-Site Scripting (XSS)</li></button>
+				<div class="panel">
+				<p>It is a kind of hacking particularly in websites by doing injection attack which the attackers exploits the vulnerability of  the site to attack the visitors of the site. By doing so attacker put scripts or malicious codes  in the website which is not visible in the users interface. these scripts can alter the website, by creating or change links that can lead the user to a page that installs malware or copies a users session id or cookies and do other malicious activities using the victim’s account .
+				</p>
+				</div>
+				<button class="accordion"><li>A8:2017-Insecure Deserialization</li></button>
+				<div class="panel">
+				<p>
+					Insecure Deserialization can be a serious problem when ignored. According to OWASP, "Some tools can discover deserialization flaws, but human assistance is frequently needed to validate the problem"
+				</p>
+				</div>
+				<button class="accordion"><li>A9:2017-Using Components with Known Vulnerabilities</li></button>
+				<div class="panel">
+				<p>
+					The adaptation of developer of a wide variety of third party components is now common place for most enterprise web sites to provide functionality. These components are largely used by a companies. Third party components that  present an increased security risk that needs to be understood and managed. Development is to utilize what has already been created such as frameworks and open-source libraries it is convenient for developers to use these components but also puts their projects at risk if they got their source in a untrusted source, since these components may have unpatched or existing vulnerabilities that may affect the services that developers provide, allowing threats to easily access sensitive data and or steal information from developers or from end users. Vulnerabilities are lurking anywhere and not always easy to know whether the source codes contain vulnerabilities or risk, either in a general or in a particular way. components with/can add vulnerabilities in your operating system, database, web application or in your main application.
+				</p>
+				</div>
+				<button class="accordion"><li>A10:2017-Insufficient Logging and  Monitoring</li></button>
+				<div class="panel">
+				<p>
+					According to OWASP “Exploitation of insufficient logging and monitoring is the bedrock of nearly every major incident. Attackers rely on the lack of monitoring and timely response to achieve their goals without being detected. “ <br> 
+					Lack of logging and monitoring creates domino effect issues where lack of logging makes monitoring hard and vice versa. logging everything makes sures  that the admin knows what there end users are doing, if something happens and they review the logs they will find out what it cause. Thus monitoring those logs also takes a big part, where monitoring it just every 5 mins can help nad the admin can know already what is happening through those logs.
+				</p>
+				</div>
+		</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

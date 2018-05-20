@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NodeJs</title>
+	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="icon" href="Images/K.png">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div id="header_logo">
+				<img src="Images/K.png" width="150" height="150" alt="Logo">
+			</div>
+			<div id="header_title">
+				<div class="title">Web Systems and Technologies</div> <br>
+				<div class="subtitle">Finals Topics</div>
+			</div>
+		</header>
+		<div class="navbar">
+  			<a href="index.html">Java Servlets</a>
+  			<a href="JavaServerPages.html">Java Server Pages</a>
+  			<a href="PHP.html">PHP</a>
+  			<a href="Node.html">Node JS</a>
+  			<a href="OWASP.html">OWASP</a>
+  			<a href="References.html">Read More</a>
+  			<div class="dropdown">
+    			<button class="dropbtn">Quizzes</button>
+    			<div class="dropdown-content">
+		      		<a href="Crossword.html">Crossword Puzzle</a>
+		      		<a href="quiz.php">Multiple Choice</a>
+    			</div>
+  			</div>
+  			<div class="search"> 
+	  			<form>
+	  				<label for="search">Search: </label>
+					<input class="Searchinput" type="text" onkeyup="showResult(this.value)" placeholder="Topic">
+					<div id="livesearch"></div>
+				</form>
+			</div>
+		</div> 
+		<div id="content">
+			<p> </p>
+			<p> </p>
+			<a id="1"><div class="content1">Node JS</div></a>
+			<br>
+			<div class="content2">
+				<button class="accordion">Introduction</button>
+				<div class="panel">
+				<p>Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, 
+						non-blocking I/O model that makes it lightweight and efficient. <br>It’s an asynchronous event driven JavaScript runtime, which is designed to build 
+						scalable network applications.It can handle many concurrent connections at a time, where when connection request are made concurrently for each connection 
+						a callback is fired .If there is no task to be performed Node will go to sleep.</p>
+				</div>
+				<button class="accordion">How Does It Work?</button>
+				<div class="panel">
+					<p>The main idea of Node.js: use non-blocking, event-driven I/O to remain lightweight and efficient in the face of data-intensive real-time applications that run across distributed devices. 
+						Node.js operates on a single-thread, using non-blocking I/O calls, allowing it to support tens of thousands of concurrent connections. npm is a Node.js package 
+						of open source library which is one of the largest libraries. </p>
+						<p><img src="Images/node1.png" width="900" height="500"></p>
+						<p>It’s an asynchronous event driven JavaScript runtime, which is designed to build scalable network applications.It can handle many concurrent connections at a time, where when connection request are made concurrently for
+            				each connection a callback is fired .If there is no task to be performed Node will go to sleep.</p>
+				</div>
+				<button class="accordion">Our Understanding of Node JS</button>
+				<div class="panel">
+					<p>Node.js is a server-side programming framework, built on Chrome's JavaScript engine, this makes possible
+					event-driven and non-blocking I/O. node.js is that it has an asynchronous way of execution wherein it is very appropriate in execution of task at the same time
+					. It is suitable for applications where connections should be kept connected. </p>
+				</div>
+	 		</div>	
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
