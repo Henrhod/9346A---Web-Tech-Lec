@@ -1,0 +1,89 @@
+<pages>
+	<link>
+		<title>Java Servlets</title>
+		<url>http://localhost/webFinals/index.html</url>
+	</link>
+	
+	<link>
+		<title>Java Server Pages</title>
+		<url>http://localhost/webFinals/JavaServerPages.html</url>
+	</link>
+
+	<link>
+		<title>JSP</title>
+		<url>http://localhost/webFinals/JavaServerPages.html</url>
+	</link>
+
+	<link>
+		<title>PHP</title>
+		<url>
+		http://localhost/webFinals/PHP.html
+		</url>
+	</link>
+
+	<link>
+		<title>Hypertext Preprocessor</title>
+		<url>
+		http://localhost/webFinals/PHP.html
+		</url>
+	</link>
+
+	<link>
+		<title>Node.JS</title>
+		<url>http://localhost/webFinals/Node.html</url>
+	</link>
+
+	<link>
+		<title>OWASP</title>
+		<url>http://localhost/webFinals/OWASP.html</url>
+	</link>
+
+	<link>
+		<title>Read more on Java Server Pages</title>
+		<url>
+		http://localhost/webFinals/References.html
+		</url>
+	</link>
+
+	<link>
+		<title>Read more on Node.JS</title>
+		<url>
+		http://localhost/webFinals/References.html
+		</url>
+	</link>
+
+	<link>
+		<title>Read more on Open Web Application Security Project OWASP</title>
+		<url>
+		http://localhost/webFinals/References.html
+		</url>
+	</link>
+
+	<link>
+		<title>Read more on PHP</title>
+		<url>
+		http://localhost/webFinals/References.html
+		</url>
+	</link>
+
+	<link>
+		<title>Read more on Java Servlets</title>
+		<url>
+		http://localhost/webFinals/References.html
+		</url>
+	</link>
+
+	<link>
+		<title>Crossword Puzzle</title>
+		<url>
+		http://localhost/webFinals/Crossword.html
+		</url>
+	</link>
+
+	<link>
+		<title>Multiple Choice Quiz</title>
+		<url>
+		http://localhost/webFinals/quiz.php
+		</url>
+	</link>
+</pages>
